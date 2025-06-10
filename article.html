@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статья - Medium Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 6rem auto 2rem;
+            padding: 0 2rem;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .article-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .article-author-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .article-author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .article-author-name {
+            font-weight: 500;
+        }
+
+        .article-date {
+            color: #757575;
+        }
+
+        .article-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #292929;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 80px;
+            left: 20px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: 0.5rem 1rem;
+            border-radius: 99px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: #292929;
+        }
+
+        .back-button:hover {
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Medium</a></div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Написать</a>
+                <a href="#" class="nav-link">Войти</a>
+                <button class="get-started">Начать</button>
+            </div>
+        </nav>
+    </header>
+
+    <a href="index.html" class="back-button">← Назад</a>
+
+    <main class="article-container">
+        <article>
+            <header class="article-header">
+                <h1 class="article-title" id="articleTitle"></h1>
+                <div class="article-meta">
+                    <div class="article-author-info">
+                        <img id="articleAuthorAvatar" class="article-author-avatar" alt="">
+                        <div>
+                            <div class="article-author-name" id="articleAuthor"></div>
+                            <div class="article-date" id="articleDate"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="article-content" id="articleContent">
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">О нас</a>
+            <a href="#">Помощь</a>
+            <a href="#">Условия</a>
+            <a href="#">Конфиденциальность</a>
+        </div>
+    </footer>
+
+    <script src="js/article.js"></script>
+</body>
+</html>
